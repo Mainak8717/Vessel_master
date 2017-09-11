@@ -1,27 +1,28 @@
-﻿<Properties StartupConfiguration="{5784BFF7-4A43-428D-BB5E-60C479F1B2A1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="VesselManagement/HomeViewController.cs">
+﻿<Properties StartupConfiguration="{5784BFF7-4A43-428D-BB5E-60C479F1B2A1}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vessel_master Status">
     <Files>
-      <File FileName="VesselManagement/ManageVC.cs" Line="12" Column="34" />
+      <File FileName="VesselManagement/ManageVC.cs" Line="23" Column="1" />
       <File FileName="VesselManagement/ManageCell.cs" Line="22" Column="20" />
       <File FileName="VesselManagement/TripCell.cs" Line="21" Column="1" />
-      <File FileName="VesselManagement/manageListTableSource.cs" Line="20" Column="30" />
+      <File FileName="VesselManagement/manageListTableSource.cs" Line="30" Column="4" />
       <File FileName="VesselManagement/TripsTableSource.cs" Line="23" Column="16" />
       <File FileName="VesselManagement/LoginVC.cs" Line="24" Column="48" />
       <File FileName="VesselManagement/TripDetailsVC.cs" Line="1" Column="1" />
-      <File FileName="VesselManagement/HomeViewController.cs" Line="1" Column="1" />
+      <File FileName="VesselManagement/HomeViewController.cs" Line="53" Column="1" />
+      <File FileName="Vessel_master Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.VesselManagement PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E48B4C87-6E51-449A-974B-D2D685100032" HideGettingStarted="True" />
+  <MonoDevelop.Ide.ItemProperties.VesselManagement PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.27EBCBDD-BBE4-445D-8452-A3AB9C6E1E9B" HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/Mainak/Desktop/VesselManagement-master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="227" column="1" />
-      <Breakpoint file="/Users/Mainak/Desktop/VesselManagement-master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="238" column="1" />
-      <Breakpoint file="/Users/Mainak/Desktop/VesselManagement-master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="429" column="45" />
-      <Breakpoint file="/Users/Mainak/Desktop/VesselManagement-master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="396" column="1" />
-      <Breakpoint file="/Users/Mainak/Desktop/VesselManagement-master/VesselManagement/MenuTableSourceClass.cs" relfile="VesselManagement/MenuTableSourceClass.cs" line="51" column="89" />
-      <Breakpoint file="/Users/Mainak/Desktop/VesselManagement-master/VesselManagement/Menu/SideBarMenuController.cs" relfile="VesselManagement/Menu/SideBarMenuController.cs" line="129" column="1" />
-      <Breakpoint file="/Users/Mainak/Desktop/VesselManagement-master/VesselManagement/TripDetailsVC.cs" relfile="VesselManagement/TripDetailsVC.cs" line="25" column="127" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="227" column="1" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="238" column="1" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="429" column="45" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/SideMenuTransition.cs" relfile="VesselManagement/SideMenuTransition.cs" line="396" column="1" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/MenuTableSourceClass.cs" relfile="VesselManagement/MenuTableSourceClass.cs" line="51" column="89" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/Menu/SideBarMenuController.cs" relfile="VesselManagement/Menu/SideBarMenuController.cs" line="129" column="1" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/TripDetailsVC.cs" relfile="VesselManagement/TripDetailsVC.cs" line="25" column="127" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

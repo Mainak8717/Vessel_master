@@ -16,35 +16,18 @@ namespace VesselManagement
 		{
 			base.ViewDidLoad();
 			manageListTbleView.RegisterNibForCellReuse(ManageCell.Nib, "ManageCell");
-			UIView headerView = new UIView(new CoreGraphics.CGRect(0, 0, addedListTblView.Frame.Size.Width, 40));
-			UILabel remainingCapacityLbl = new UILabel(new CoreGraphics.CGRect(10, 5, addedListTblView.Frame.Size.Width-10, 30));
+			UIView headerView = new UIView(new CoreGraphics.CGRect(0, 0, manageListTbleView.Frame.Size.Width, 40));
+			UILabel remainingCapacityLbl = new UILabel(new CoreGraphics.CGRect(10, 5, manageListTbleView.Frame.Size.Width-10, 30));
 			remainingCapacityLbl.Text = "Remaining Capacity: 0 out of 20";
 			headerView.AddSubview(remainingCapacityLbl);
-
 			manageListTbleView.TableHeaderView = headerView;
-			manageListTbleView.SectionFooterHeight = 0;
-			//manageListTbleView.TableFooterView = new UIView(new CoreGraphics.CGRect(0, 0, addedListTblView.Frame.Size.Width, 5));
 			manageListTbleView.Source = new manageListTableSource();
 		}
 		public override void ViewDidLayoutSubviews()
 		{
-			//NSLayoutConstraint heightConstraint = new NSLayoutConstraint();
-			//foreach (NSLayoutConstraint constraint in addedListTblView.Constraints) {
-			//	if (constraint.FirstAttribute == NSLayoutAttribute.Height) {
-			//        heightConstraint = constraint;
-			//        break;
-			//    }
-			//}
-						manageListTbleView.SectionFooterHeight = 0;
+			manageListTbleView.SizeToFit();
+			addBtn.Frame = new CoreGraphics.CGRect(5, manageListTbleView.Frame.Y + manageListTbleView.Frame.Size.Height, UIScreen.MainScreen.Bounds.Width - 10, 50);
 
-			//heightConstraint.Constant = 200;
-			//tableViewHeightConstraint.Constant = 212f;
-
-		}
-		public override void DidReceiveMemoryWarning()
-		{
-			base.DidReceiveMemoryWarning();
-			// Release any cached data, images, etc that aren't in use.
 		}
 	}
 }
