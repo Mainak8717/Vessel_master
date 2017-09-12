@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageVC">
             <connections>
-                <outlet property="addBtn" destination="smd-HB-CO0" id="aaq-8y-s3d"/>
+                <outlet property="bottomTableView" destination="Usi-xG-b13" id="6b9-mx-Tp8"/>
+                <outlet property="bottomView" destination="DxD-zn-qQY" id="WrX-zv-fYZ"/>
                 <outlet property="manageListTbleView" destination="nM0-rX-Vol" id="v57-Vh-3J1"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
             </connections>
@@ -48,37 +49,47 @@
                         <constraint firstAttribute="height" constant="50" id="bgo-9p-jou"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smd-HB-CO0">
-                    <rect key="frame" x="162" y="356" width="50" height="30"/>
-                    <color key="backgroundColor" red="0.039215686270000001" green="0.30588235289999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxD-zn-qQY">
+                    <rect key="frame" x="16" y="346" width="343" height="321"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42S-hn-SsU">
+                            <rect key="frame" x="8" y="6" width="327" height="30"/>
+                            <color key="backgroundColor" red="0.039215686270000001" green="0.30588235289999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="xcG-xj-Iok"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Usi-xG-b13">
+                            <rect key="frame" x="0.0" y="43" width="343" height="321"/>
+                            <color key="backgroundColor" red="0.086274509799999996" green="0.68627450980000004" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="50" id="72C-K3-f6Q"/>
-                        <constraint firstAttribute="height" constant="30" id="R8s-8i-9mN"/>
+                        <constraint firstItem="Usi-xG-b13" firstAttribute="top" secondItem="42S-hn-SsU" secondAttribute="bottom" constant="7" id="2Sf-2X-JLT"/>
+                        <constraint firstAttribute="trailing" secondItem="42S-hn-SsU" secondAttribute="trailing" constant="8" id="7Zo-RH-keW"/>
+                        <constraint firstAttribute="bottom" secondItem="Usi-xG-b13" secondAttribute="bottom" constant="-43" id="OSz-Xh-E24"/>
+                        <constraint firstAttribute="trailing" secondItem="Usi-xG-b13" secondAttribute="trailing" id="VGJ-Id-aBo"/>
+                        <constraint firstItem="Usi-xG-b13" firstAttribute="leading" secondItem="DxD-zn-qQY" secondAttribute="leading" id="jqr-aQ-LtA"/>
+                        <constraint firstItem="42S-hn-SsU" firstAttribute="leading" secondItem="DxD-zn-qQY" secondAttribute="leading" constant="8" id="rwo-NT-MGE"/>
+                        <constraint firstItem="Usi-xG-b13" firstAttribute="height" secondItem="DxD-zn-qQY" secondAttribute="height" id="ydk-Ee-61C"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Add">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I3s-Q3-85c">
-                    <rect key="frame" x="15" y="396" width="345" height="261"/>
-                    <color key="backgroundColor" red="0.039215686270000001" green="0.68627450980000004" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </tableView>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="dvR-tB-tX1" firstAttribute="top" secondItem="2" secondAttribute="top" id="2hj-hm-znR"/>
-                <constraint firstAttribute="bottom" secondItem="I3s-Q3-85c" secondAttribute="bottom" constant="10" id="Bsy-uP-idG"/>
-                <constraint firstItem="I3s-Q3-85c" firstAttribute="top" secondItem="smd-HB-CO0" secondAttribute="bottom" constant="10" id="H2e-TN-ECu"/>
-                <constraint firstAttribute="trailing" secondItem="smd-HB-CO0" secondAttribute="trailing" constant="163" id="KGx-hC-eBw"/>
+                <constraint firstAttribute="trailing" secondItem="DxD-zn-qQY" secondAttribute="trailing" constant="16" id="DNw-LG-FVg"/>
+                <constraint firstItem="DxD-zn-qQY" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16" id="Eh8-Ib-Q0B"/>
                 <constraint firstItem="nM0-rX-Vol" firstAttribute="top" secondItem="2" secondAttribute="top" constant="60" id="Niq-K9-WfN"/>
-                <constraint firstAttribute="trailing" secondItem="I3s-Q3-85c" secondAttribute="trailing" constant="15" id="Wcu-OJ-xvl"/>
                 <constraint firstItem="nM0-rX-Vol" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="15" id="ayT-NK-Y1Y"/>
-                <constraint firstItem="smd-HB-CO0" firstAttribute="top" secondItem="nM0-rX-Vol" secondAttribute="bottom" constant="10" id="feg-V9-PzF"/>
                 <constraint firstAttribute="trailing" secondItem="nM0-rX-Vol" secondAttribute="trailing" constant="15" id="gl6-NS-3Af"/>
-                <constraint firstItem="smd-HB-CO0" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="162" id="pEI-cE-Abw"/>
+                <constraint firstAttribute="bottom" secondItem="DxD-zn-qQY" secondAttribute="bottom" id="nOb-LA-pJ1"/>
                 <constraint firstItem="dvR-tB-tX1" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="t9o-s1-WOr"/>
-                <constraint firstItem="I3s-Q3-85c" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="15" id="yyq-hV-7fM"/>
+                <constraint firstItem="DxD-zn-qQY" firstAttribute="top" secondItem="nM0-rX-Vol" secondAttribute="bottom" id="vj4-HS-vjx"/>
                 <constraint firstAttribute="trailing" secondItem="dvR-tB-tX1" secondAttribute="trailing" id="zMD-aL-uIk"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>

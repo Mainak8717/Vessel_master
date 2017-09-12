@@ -26,8 +26,10 @@ namespace VesselManagement
 		public override void ViewDidLayoutSubviews()
 		{
 			manageListTbleView.SizeToFit();
-			addBtn.Frame = new CoreGraphics.CGRect(5, manageListTbleView.Frame.Y + manageListTbleView.Frame.Size.Height, UIScreen.MainScreen.Bounds.Width - 10, 50);
+			bottomView.Frame = new CoreGraphics.CGRect(5, manageListTbleView.Frame.Y + manageListTbleView.Frame.Size.Height, UIScreen.MainScreen.Bounds.Width - 10, 499);
+			//bottomTableView.Frame = new CoreGraphics.CGRect(5, bottomView.Frame.Y + 40, bottomView.Frame.Size.Width, 499);
 
+			//bottomTableView.SizeToFit();
 		}
 	}
 }
