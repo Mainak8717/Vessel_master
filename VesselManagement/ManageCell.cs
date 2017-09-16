@@ -9,6 +9,7 @@ namespace VesselManagement
 	{
 		public static readonly NSString Key = new NSString("ManageCell");
 		public static readonly UINib Nib;
+		public ManageVC owner;
 
 		static ManageCell()
 		{
@@ -19,6 +20,25 @@ namespace VesselManagement
 		{
 			// Note: this .ctor should not contain any initialization logic.
 		}
-		public ManageCell(string reuseIdentifier) : base(UITableViewCellStyle.Default, reuseIdentifier){   }
+		public ManageCell(string reuseIdentifier, ManageVC instanceClass) : base(UITableViewCellStyle.Default, reuseIdentifier){
+
+			owner = instanceClass;
+			manageCellSearchButton.TouchUpInside += (sender, e) =>
+			{
+				owner.NavigationController.PresentModalViewController(new SearchVC("vendor List"), true);
+			};
+		}
+		public void updateManageCellFields(string valueSelected,string labelText,ManageVC instance, bool hideButton)
+		{
+			if (labelText.Equals("Vendor") && !string.IsNullOrEmpty(valueSelected))
+				manageCellTextField.Text = valueSelected;
+			manageCellSearchButton.Hidden = hideButton;
+			manageCellLabel.Text = labelText;
+			owner = instance;
+		}
+		partial void searchBtnAction(NSObject sender)
+		{
+			owner.NavigationController.PresentModalViewController(new SearchVC("Vendors List"), true);
+		}
 	}
 }

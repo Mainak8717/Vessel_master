@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="cxk-wN-pdQ" customClass="BottomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendor ABC Ltd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fL7-c5-zeJ">
+                        <rect key="frame" x="8" y="7" width="287" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.039215686270000001" green="0.30588235289999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: XYZ Co." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNi-Kx-nt5">
+                        <rect key="frame" x="8" y="28" width="287" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.039215686270000001" green="0.30588235289999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Count: 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-Gl-AuG">
+                        <rect key="frame" x="8" y="49" width="287" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.039215686270000001" green="0.30588235289999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GNi-Kx-nt5" firstAttribute="width" secondItem="fL7-c5-zeJ" secondAttribute="width" id="2Bs-Yc-eWe"/>
+                    <constraint firstItem="VoP-Gl-AuG" firstAttribute="width" secondItem="fL7-c5-zeJ" secondAttribute="width" id="6Ui-IC-AZF"/>
+                    <constraint firstItem="VoP-Gl-AuG" firstAttribute="centerX" secondItem="fL7-c5-zeJ" secondAttribute="centerX" id="8Vj-FQ-2Sw"/>
+                    <constraint firstItem="GNi-Kx-nt5" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" id="DH6-GK-0DG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GNi-Kx-nt5" secondAttribute="trailing" constant="17" id="P1L-OV-TxV"/>
+                    <constraint firstItem="GNi-Kx-nt5" firstAttribute="top" secondItem="fL7-c5-zeJ" secondAttribute="bottom" id="SMR-cv-ghY"/>
+                    <constraint firstItem="VoP-Gl-AuG" firstAttribute="top" secondItem="GNi-Kx-nt5" secondAttribute="bottom" id="fOm-IQ-5ax"/>
+                    <constraint firstItem="VoP-Gl-AuG" firstAttribute="height" secondItem="fL7-c5-zeJ" secondAttribute="height" id="okz-Bq-X7S"/>
+                    <constraint firstItem="GNi-Kx-nt5" firstAttribute="centerX" secondItem="fL7-c5-zeJ" secondAttribute="centerX" id="pFN-Co-NMA"/>
+                    <constraint firstItem="GNi-Kx-nt5" firstAttribute="height" secondItem="fL7-c5-zeJ" secondAttribute="height" id="vxk-8M-Eau"/>
+                    <constraint firstItem="GNi-Kx-nt5" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="zQq-kq-W2C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="34" y="70.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -16,9 +16,6 @@ namespace VesselManagement
 		UIKit.UIButton addBtn { get; set; }
 
 		[Outlet]
-		UIKit.UITableView addedListTblView { get; set; }
-
-		[Outlet]
 		UIKit.UITableView bottomTableView { get; set; }
 
 		[Outlet]
@@ -26,9 +23,6 @@ namespace VesselManagement
 
 		[Outlet]
 		UIKit.UITableView manageListTbleView { get; set; }
-
-		[Outlet]
-		UIKit.NSLayoutConstraint tableViewHeightConstraint { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -37,19 +31,9 @@ namespace VesselManagement
 				addBtn = null;
 			}
 
-			if (addedListTblView != null) {
-				addedListTblView.Dispose ();
-				addedListTblView = null;
-			}
-
-			if (manageListTbleView != null) {
-				manageListTbleView.Dispose ();
-				manageListTbleView = null;
-			}
-
-			if (tableViewHeightConstraint != null) {
-				tableViewHeightConstraint.Dispose ();
-				tableViewHeightConstraint = null;
+			if (bottomTableView != null) {
+				bottomTableView.Dispose ();
+				bottomTableView = null;
 			}
 
 			if (bottomView != null) {
@@ -57,9 +41,9 @@ namespace VesselManagement
 				bottomView = null;
 			}
 
-			if (bottomTableView != null) {
-				bottomTableView.Dispose ();
-				bottomTableView = null;
+			if (manageListTbleView != null) {
+				manageListTbleView.Dispose ();
+				manageListTbleView = null;
 			}
 		}
 	}

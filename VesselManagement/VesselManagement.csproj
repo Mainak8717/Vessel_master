@@ -104,6 +104,7 @@
     <InterfaceDefinition Include="TripDetailsVC.xib" />
     <InterfaceDefinition Include="ManageVC.xib" />
     <InterfaceDefinition Include="ManageCell.xib" />
+    <InterfaceDefinition Include="BottomTableViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -163,6 +164,11 @@
       <DependentUpon>ManageCell.cs</DependentUpon>
     </Compile>
     <Compile Include="manageListTableSource.cs" />
+    <Compile Include="BottomTableViewCell.cs" />
+    <Compile Include="BottomTableViewCell.designer.cs">
+      <DependentUpon>BottomTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BottomTableViewSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\menu.png" />

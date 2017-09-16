@@ -66,6 +66,10 @@ namespace VesselManagement
 					NSNotificationCenter.DefaultCenter.PostNotificationName(
 				"shipValueSelected", (NSString)selectedVal.Title.ToString());
 					break;
+				case "Vendors List":
+					NSNotificationCenter.DefaultCenter.PostNotificationName(
+				"vendorNameSelected", (NSString)selectedVal.Title.ToString());
+					break;
 			}
 
 			tableView.DeselectRow (indexPath, true);

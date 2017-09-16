@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-mM-lJM">
@@ -41,6 +41,9 @@
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DW7-IW-ty5">
                         <rect key="frame" x="295" y="42" width="22" height="22"/>
+                        <connections>
+                            <action selector="searchBtnAction:" destination="cxk-wN-pdQ" eventType="touchUpInside" id="JN0-jb-JBW"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -53,6 +56,11 @@
                     <constraint firstItem="DW7-IW-ty5" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" constant="34" id="kf3-vR-Pin"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="manageCellLabel" destination="0Gi-mM-lJM" id="ORQ-jF-4I9"/>
+                <outlet property="manageCellSearchButton" destination="DW7-IW-ty5" id="UBk-De-dVE"/>
+                <outlet property="manageCellTextField" destination="oxo-Kt-T8P" id="fha-8b-Wud"/>
+            </connections>
             <point key="canvasLocation" x="34" y="69"/>
         </tableViewCell>
     </objects>

@@ -33,13 +33,25 @@ namespace VesselManagement
 				searchTable();  
             };  
 			table = new UITableView(new CGRect(0,60 , UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height - 20));  
-            tableItems = new List<TableItem>();  
+            tableItems = new List<TableItem>();
+			if (searchType.Equals("Vendors List"))
+			{
+				tableItems.Add(new TableItem("Vendor 1") { ImageName = "Vegetables.jpg" });  
+	            tableItems.Add(new TableItem("Vendor 2") { ImageName = "Fruits.jpg" });  
+	            tableItems.Add(new TableItem("Vendor 3") { ImageName = "Flower Buds.jpg" });  
+	            tableItems.Add(new TableItem("Vendor 4") { ImageName = "Legumes.jpg" });  
+	            tableItems.Add(new TableItem("Vendor 5") { ImageName = "Tubers.jpg" });
+			}
+			else
+			{
+				tableItems.Add(new TableItem("Hudson Bay") { ImageName = "Vegetables.jpg" });  
+	            tableItems.Add(new TableItem("Shanghai") { ImageName = "Fruits.jpg" });  
+	            tableItems.Add(new TableItem("Batemans Bay") { ImageName = "Flower Buds.jpg" });  
+	            tableItems.Add(new TableItem("Coalcliff Harbour") { ImageName = "Legumes.jpg" });  
+	            tableItems.Add(new TableItem("SunderLand") { ImageName = "Tubers.jpg" });
+			}
+		  
   
-            tableItems.Add(new TableItem("Hudson Bay") { ImageName = "Vegetables.jpg" });  
-            tableItems.Add(new TableItem("Shanghai") { ImageName = "Fruits.jpg" });  
-            tableItems.Add(new TableItem("Batemans Bay") { ImageName = "Flower Buds.jpg" });  
-            tableItems.Add(new TableItem("Coalcliff Harbour") { ImageName = "Legumes.jpg" });  
-            tableItems.Add(new TableItem("SunderLand") { ImageName = "Tubers.jpg" });  
 			tableSource = new SearchTableSource(tableItems,this,searchType);
 			table.Source = tableSource;  
             table.TableHeaderView = searchBar;
