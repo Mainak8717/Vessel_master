@@ -6,10 +6,11 @@ namespace VesselManagement
 {
 	public class BottomTableViewSource : UITableViewSource
 	{
-		string valueToBeDisplayed;
-		public BottomTableViewSource(string searchValue)
+		string cellType;
+		string[] labelValues;
+		public BottomTableViewSource(string typeOfCell)
 		{
-			valueToBeDisplayed = searchValue;
+			cellType = typeOfCell;
 		}
 		public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 		{
@@ -21,8 +22,13 @@ namespace VesselManagement
 								?? new BottomTableViewCell("BottomTableViewCell");
 			cell.Accessory = UITableViewCellAccessory.None;
 			cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+			if(cellType.Equals("Agency"))
+				labelValues = new string[]{"Agency 1","Contact Info:N/A"};
+			else if(cellType.Equals("BoatAgency"))
+				labelValues = new string[]{"Boat Agency 1","Phone:N/A"};
 
-						return cell;
+			cell.updateCell(labelValues);
+			return cell;
 		}
 
 		public override nint RowsInSection(UITableView tableview, nint section)

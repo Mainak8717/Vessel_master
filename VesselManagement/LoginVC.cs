@@ -21,7 +21,7 @@ namespace VesselManagement
 			{
 
 				BaseNavigationController nav =
-					new BaseNavigationController(new ManageVC());
+					new BaseNavigationController(new HomeViewController(false,true));
 
 
 				MainDelegate.MainNavController = nav;

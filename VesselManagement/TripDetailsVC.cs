@@ -16,13 +16,23 @@ namespace VesselManagement
 		{
 			base.ViewDidLoad();
 			firstButton.Hidden = false;
-			secondButton.Hidden = true;
-			thirdButton.Hidden = true;
-			fourthButton.Hidden = true;
+			secondButton.Hidden = false;
+			thirdButton.Hidden = false;
+			fourthButton.Hidden = false;
+
+			firstButton.TouchUpInside += (sender, e) => { 
+                this.NavigationController.PushViewController(new ManageVC_1("Agency"),true);
+			};
+			thirdButton.TouchUpInside += (sender, e) => { 
+				this.NavigationController.PushViewController(new ManageVC_1("BoatAgent"),true);
+			};
+			secondButton.TouchUpInside += (sender, e) => { 
+				this.NavigationController.PushViewController(new ManageVC_2(),true);
+			};
 		}
 		public override void ViewDidLayoutSubviews()
 		{
-			scrollView.ContentSize = new CoreGraphics.CGSize(View.Frame.Width, firstButton.Frame.Y + firstButton.Frame.Size.Height + 80);
+			scrollView.ContentSize = new CoreGraphics.CGSize(View.Frame.Width, firstButton.Frame.Y + firstButton.Frame.Size.Height + 200);
 
 		}
 		public override void DidReceiveMemoryWarning()

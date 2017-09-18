@@ -66,9 +66,21 @@ namespace VesselManagement
 					NSNotificationCenter.DefaultCenter.PostNotificationName(
 				"shipValueSelected", (NSString)selectedVal.Title.ToString());
 					break;
-				case "Vendors List":
+				case "vendorsList":
 					NSNotificationCenter.DefaultCenter.PostNotificationName(
-				"vendorNameSelected", (NSString)selectedVal.Title.ToString());
+				"vendorsList", (NSString)selectedVal.Title.ToString());
+					break;
+				case "serviceList":
+					NSNotificationCenter.DefaultCenter.PostNotificationName(
+				"serviceList", (NSString)selectedVal.Title.ToString());
+					break;
+				case "Agency":
+					NSNotificationCenter.DefaultCenter.PostNotificationName(
+				"agencySelected", (NSString)selectedVal.Title.ToString());
+					break;
+					case "BoatAgent":
+					NSNotificationCenter.DefaultCenter.PostNotificationName(
+				"BoatAgent", (NSString)selectedVal.Title.ToString());
 					break;
 			}
 

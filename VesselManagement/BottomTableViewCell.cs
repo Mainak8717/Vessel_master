@@ -22,5 +22,11 @@ namespace VesselManagement
 		public BottomTableViewCell(string reuseIdentifier) : base(UITableViewCellStyle.Default, reuseIdentifier){
 
 		}
+		public void updateCell(string [] labelVelues)
+		{
+			headerLbl.Text = labelVelues[0];
+			subTitleLbl.Text = labelVelues[1];
+			subTitleLbl_2.Hidden = true;
+		}
 	}
 }

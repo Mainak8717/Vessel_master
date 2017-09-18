@@ -34,13 +34,37 @@ namespace VesselManagement
             };  
 			table = new UITableView(new CGRect(0,60 , UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height - 20));  
             tableItems = new List<TableItem>();
-			if (searchType.Equals("Vendors List"))
+			if (searchType.Equals("vendorsList"))
 			{
-				tableItems.Add(new TableItem("Vendor 1") { ImageName = "Vegetables.jpg" });  
-	            tableItems.Add(new TableItem("Vendor 2") { ImageName = "Fruits.jpg" });  
-	            tableItems.Add(new TableItem("Vendor 3") { ImageName = "Flower Buds.jpg" });  
-	            tableItems.Add(new TableItem("Vendor 4") { ImageName = "Legumes.jpg" });  
-	            tableItems.Add(new TableItem("Vendor 5") { ImageName = "Tubers.jpg" });
+				tableItems.Add(new TableItem("Vendor 1") { ImageName = "Vegetables.jpg" });
+				tableItems.Add(new TableItem("Vendor 2") { ImageName = "Fruits.jpg" });
+				tableItems.Add(new TableItem("Vendor 3") { ImageName = "Flower Buds.jpg" });
+				tableItems.Add(new TableItem("Vendor 4") { ImageName = "Legumes.jpg" });
+				tableItems.Add(new TableItem("Vendor 5") { ImageName = "Tubers.jpg" });
+			}
+			else if (searchType.Equals("Agency"))
+			{
+				tableItems.Add(new TableItem("Agency 1") { ImageName = "Vegetables.jpg" });
+				tableItems.Add(new TableItem("Agency 2") { ImageName = "Fruits.jpg" });
+				tableItems.Add(new TableItem("Agency 3") { ImageName = "Flower Buds.jpg" });
+				tableItems.Add(new TableItem("Agency 4") { ImageName = "Legumes.jpg" });
+				tableItems.Add(new TableItem("Agency 5") { ImageName = "Tubers.jpg" });
+			}
+			else if (searchType.Equals("serviceList"))
+			{
+				tableItems.Add(new TableItem("Service 1") { ImageName = "Vegetables.jpg" });
+				tableItems.Add(new TableItem("Service 2") { ImageName = "Fruits.jpg" });
+				tableItems.Add(new TableItem("Service 3") { ImageName = "Flower Buds.jpg" });
+				tableItems.Add(new TableItem("Service 4") { ImageName = "Legumes.jpg" });
+				tableItems.Add(new TableItem("Service 5") { ImageName = "Tubers.jpg" });
+			}
+			else if (searchType.Equals("BoatAgent"))
+			{
+				tableItems.Add(new TableItem("BoatAgency 1") { ImageName = "Vegetables.jpg" });
+				tableItems.Add(new TableItem("BoatAgency 2") { ImageName = "Fruits.jpg" });
+				tableItems.Add(new TableItem("BoatAgency 3") { ImageName = "Flower Buds.jpg" });
+				tableItems.Add(new TableItem("BoatAgency 4") { ImageName = "Legumes.jpg" });
+				tableItems.Add(new TableItem("BoatAgency 5") { ImageName = "Tubers.jpg" });
 			}
 			else
 			{
@@ -65,7 +89,7 @@ namespace VesselManagement
 		{
 			tableSource.PerformSearch(searchBar.Text);
 					table.ReloadData();
-				} 
+		} 
 		public override void DidReceiveMemoryWarning()
 		{
 			base.DidReceiveMemoryWarning();
