@@ -1,6 +1,13 @@
 ﻿<Properties StartupConfiguration="{5784BFF7-4A43-428D-BB5E-60C479F1B2A1}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workbench ActiveDocument="Vessel_master Status">
     <Files>
+      <File FileName="VesselManagement/Models/TripDetails.cs" Line="28" Column="20" />
+      <File FileName="VesselManagement/Models/TripModel.cs" Line="6" Column="37" />
+      <File FileName="VesselManagement/ViewController/HomeViewController.cs" Line="37" Column="4" />
+      <File FileName="VesselManagement/TableSource/TripsTableSource.cs" Line="35" Column="92" />
+      <File FileName="VesselManagement/ViewController/TripDetailsVC.cs" Line="14" Column="1" />
+      <File FileName="VesselManagement/ViewController/ManageVC.cs" Line="13" Column="1" />
+      <File FileName="VesselManagement/TableSource/SearchTableSource.cs" Line="39" Column="1" />
       <File FileName="Vessel_master Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -15,6 +22,7 @@
       <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/MenuTableSourceClass.cs" relfile="VesselManagement/MenuTableSourceClass.cs" line="51" column="89" />
       <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/Menu/SideBarMenuController.cs" relfile="VesselManagement/Menu/SideBarMenuController.cs" line="129" column="1" />
       <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/TripDetailsVC.cs" relfile="VesselManagement/TripDetailsVC.cs" line="25" column="127" />
+      <Breakpoint file="/Users/KolkataMobility/Desktop/Vessel_master/VesselManagement/ViewController/TripDetailsVC.cs" relfile="VesselManagement/ViewController/TripDetailsVC.cs" line="14" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

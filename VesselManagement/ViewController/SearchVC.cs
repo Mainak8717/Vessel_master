@@ -36,46 +36,53 @@ namespace VesselManagement
             tableItems = new List<TableItem>();
 			if (searchType.Equals("vendorsList"))
 			{
-				tableItems.Add(new TableItem("Vendor 1") { ImageName = "Vegetables.jpg" });
-				tableItems.Add(new TableItem("Vendor 2") { ImageName = "Fruits.jpg" });
-				tableItems.Add(new TableItem("Vendor 3") { ImageName = "Flower Buds.jpg" });
-				tableItems.Add(new TableItem("Vendor 4") { ImageName = "Legumes.jpg" });
-				tableItems.Add(new TableItem("Vendor 5") { ImageName = "Tubers.jpg" });
+				tableItems.Add(new TableItem("Vendor 1"));
+				tableItems.Add(new TableItem("Vendor 2"));
+				tableItems.Add(new TableItem("Vendor 3"));
+				tableItems.Add(new TableItem("Vendor 4"));
+				tableItems.Add(new TableItem("Vendor 5"));
+			}
+			else if (searchType.Equals("boatVendorSelected"))
+			{
+				tableItems.Add(new TableItem("Boat Vendor 1"));
+				tableItems.Add(new TableItem("Boat Vendor 2"));
+				tableItems.Add(new TableItem("Boat Vendor 3"));
+				tableItems.Add(new TableItem("Boat Vendor 4"));
+				tableItems.Add(new TableItem("Boat Vendor 5"));
 			}
 			else if (searchType.Equals("Agency"))
 			{
-				tableItems.Add(new TableItem("Agency 1") { ImageName = "Vegetables.jpg" });
-				tableItems.Add(new TableItem("Agency 2") { ImageName = "Fruits.jpg" });
-				tableItems.Add(new TableItem("Agency 3") { ImageName = "Flower Buds.jpg" });
-				tableItems.Add(new TableItem("Agency 4") { ImageName = "Legumes.jpg" });
-				tableItems.Add(new TableItem("Agency 5") { ImageName = "Tubers.jpg" });
+				tableItems.Add(new TableItem("Agency 1"));
+				tableItems.Add(new TableItem("Agency 2"));
+				tableItems.Add(new TableItem("Agency 3"));
+				tableItems.Add(new TableItem("Agency 4"));
+				tableItems.Add(new TableItem("Agency 5"));
 			}
 			else if (searchType.Equals("serviceList"))
 			{
-				tableItems.Add(new TableItem("Service 1") { ImageName = "Vegetables.jpg" });
-				tableItems.Add(new TableItem("Service 2") { ImageName = "Fruits.jpg" });
-				tableItems.Add(new TableItem("Service 3") { ImageName = "Flower Buds.jpg" });
-				tableItems.Add(new TableItem("Service 4") { ImageName = "Legumes.jpg" });
-				tableItems.Add(new TableItem("Service 5") { ImageName = "Tubers.jpg" });
+				tableItems.Add(new TableItem("Service 1"));
+				tableItems.Add(new TableItem("Service 2"));
+				tableItems.Add(new TableItem("Service 3"));
+				tableItems.Add(new TableItem("Service 4"));
+				tableItems.Add(new TableItem("Service 5"));
 			}
 			else if (searchType.Equals("BoatAgent"))
 			{
-				tableItems.Add(new TableItem("BoatAgency 1") { ImageName = "Vegetables.jpg" });
-				tableItems.Add(new TableItem("BoatAgency 2") { ImageName = "Fruits.jpg" });
-				tableItems.Add(new TableItem("BoatAgency 3") { ImageName = "Flower Buds.jpg" });
-				tableItems.Add(new TableItem("BoatAgency 4") { ImageName = "Legumes.jpg" });
-				tableItems.Add(new TableItem("BoatAgency 5") { ImageName = "Tubers.jpg" });
+				tableItems.Add(new TableItem("BoatAgency 1"));
+				tableItems.Add(new TableItem("BoatAgency 2"));
+				tableItems.Add(new TableItem("BoatAgency 3"));
+				tableItems.Add(new TableItem("BoatAgency 4"));
+				tableItems.Add(new TableItem("BoatAgency 5"));
 			}
 			else
 			{
-				tableItems.Add(new TableItem("Hudson Bay") { ImageName = "Vegetables.jpg" });  
-	            tableItems.Add(new TableItem("Shanghai") { ImageName = "Fruits.jpg" });  
-	            tableItems.Add(new TableItem("Batemans Bay") { ImageName = "Flower Buds.jpg" });  
-	            tableItems.Add(new TableItem("Coalcliff Harbour") { ImageName = "Legumes.jpg" });  
-	            tableItems.Add(new TableItem("SunderLand") { ImageName = "Tubers.jpg" });
+				tableItems.Add(new TableItem("Hudson Bay"));  
+	            tableItems.Add(new TableItem("Shanghai"));  
+	            tableItems.Add(new TableItem("Batemans Bay"));  
+	            tableItems.Add(new TableItem("Coalcliff Harbour"));  
+	            tableItems.Add(new TableItem("SunderLand"));
 			}
 		  
-  
 			tableSource = new SearchTableSource(tableItems,this,searchType);
 			table.Source = tableSource;  
             table.TableHeaderView = searchBar;

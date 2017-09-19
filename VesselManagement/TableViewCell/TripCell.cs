@@ -20,6 +20,13 @@ namespace VesselManagement
 		}
 		public TripCell(string reuseIdentifier) : base(UITableViewCellStyle.Default, reuseIdentifier){
 			
-         }
+        }
+		public void setCellValues(TripModel model)
+		{
+			tripID.Text = model.TripId;
+			source.Text = model.Source;
+			destination.Text = model.Destination;
+			status.Text = model.Status;
+		}
 	}
 }

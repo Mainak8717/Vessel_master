@@ -36,7 +36,6 @@ namespace VesselManagement
 			}
 
 			cell.TextLabel.Text = searchItems[indexPath.Row].Title;
-			cell.ImageView.Image = UIImage.FromFile("Images/" + searchItems[indexPath.Row].ImageName);
 
 			return cell;
 		}
@@ -81,6 +80,10 @@ namespace VesselManagement
 					case "BoatAgent":
 					NSNotificationCenter.DefaultCenter.PostNotificationName(
 				"BoatAgent", (NSString)selectedVal.Title.ToString());
+					break;
+				case "boatVendorSelected":
+					NSNotificationCenter.DefaultCenter.PostNotificationName(
+				"boatVendorSelected", (NSString)selectedVal.Title.ToString());
 					break;
 			}
 

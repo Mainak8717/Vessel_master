@@ -24,9 +24,9 @@ namespace VesselManagement
 		}
 		public void updateCell(string [] labelVelues)
 		{
-			headerLbl.Text = labelVelues[0];
-			subTitleLbl.Text = labelVelues[1];
-			subTitleLbl_2.Hidden = true;
+			//headerLbl.Text = labelVelues[0];
+			//subTitleLbl.Text = labelVelues[1];
+			//subTitleLbl_2.Hidden = true;
 		}
 	}
 }

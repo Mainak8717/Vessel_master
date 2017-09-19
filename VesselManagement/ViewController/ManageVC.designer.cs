@@ -16,13 +16,22 @@ namespace VesselManagement
 		UIKit.UIButton addBtn { get; set; }
 
 		[Outlet]
+		UIKit.UIButton addVendorButton { get; set; }
+
+		[Outlet]
 		UIKit.UITableView bottomTableView { get; set; }
 
 		[Outlet]
-		UIKit.UIView bottomView { get; set; }
+		UIKit.UITextField headCountTxtField { get; set; }
 
 		[Outlet]
-		UIKit.UITableView manageListTbleView { get; set; }
+		UIKit.UITextField nameTxtField { get; set; }
+
+		[Outlet]
+		UIKit.UILabel tripDetailsLbl { get; set; }
+
+		[Outlet]
+		UIKit.UITextField vendorTxtField { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -36,14 +45,29 @@ namespace VesselManagement
 				bottomTableView = null;
 			}
 
-			if (bottomView != null) {
-				bottomView.Dispose ();
-				bottomView = null;
+			if (tripDetailsLbl != null) {
+				tripDetailsLbl.Dispose ();
+				tripDetailsLbl = null;
 			}
 
-			if (manageListTbleView != null) {
-				manageListTbleView.Dispose ();
-				manageListTbleView = null;
+			if (vendorTxtField != null) {
+				vendorTxtField.Dispose ();
+				vendorTxtField = null;
+			}
+
+			if (nameTxtField != null) {
+				nameTxtField.Dispose ();
+				nameTxtField = null;
+			}
+
+			if (headCountTxtField != null) {
+				headCountTxtField.Dispose ();
+				headCountTxtField = null;
+			}
+
+			if (addVendorButton != null) {
+				addVendorButton.Dispose ();
+				addVendorButton = null;
 			}
 		}
 	}

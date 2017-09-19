@@ -188,6 +188,8 @@
     <Compile Include="TableSource\SearchTableSource.cs" />
     <Compile Include="TableSource\TripsTableSource.cs" />
     <Compile Include="Models\TableItem.cs" />
+    <Compile Include="Models\TripModel.cs" />
+    <Compile Include="Models\TripDetails.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\menu.png" />

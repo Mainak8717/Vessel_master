@@ -26,9 +26,9 @@ namespace VesselManagement
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (tripID != null) {
-				tripID.Dispose ();
-				tripID = null;
+			if (destination != null) {
+				destination.Dispose ();
+				destination = null;
 			}
 
 			if (source != null) {
@@ -36,14 +36,14 @@ namespace VesselManagement
 				source = null;
 			}
 
-			if (destination != null) {
-				destination.Dispose ();
-				destination = null;
-			}
-
 			if (status != null) {
 				status.Dispose ();
 				status = null;
+			}
+
+			if (tripID != null) {
+				tripID.Dispose ();
+				tripID = null;
 			}
 		}
 	}

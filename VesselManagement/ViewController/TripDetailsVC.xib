@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripDetailsVC">
             <connections>
+                <outlet property="AFT_Time" destination="i1v-DW-xtq" id="Hjg-Ug-Gm1"/>
+                <outlet property="BREADTH_Time" destination="ZmL-tc-qAd" id="CRq-ei-MyR"/>
+                <outlet property="CURRENTSTATUS" destination="dbC-ev-MIx" id="vxv-Dx-a1o"/>
+                <outlet property="DESTINATION" destination="ihS-wv-eTG" id="fAx-cs-EiH"/>
+                <outlet property="ENDDATE" destination="AOG-bE-iKc" id="cWj-4N-QNU"/>
+                <outlet property="ETACALC" destination="7bv-ro-kS8" id="0jp-26-qPr"/>
+                <outlet property="FWD_Time" destination="BTu-Vm-K5w" id="tuW-Z6-vNR"/>
+                <outlet property="GT_Time" destination="YYG-9K-g9u" id="Rgu-Oz-WJO"/>
+                <outlet property="IMO" destination="RWR-uF-E2u" id="Zun-vG-K1l"/>
+                <outlet property="LBP_Time" destination="WNm-Vx-ySM" id="Q2k-54-zsz"/>
+                <outlet property="LOA_Time" destination="Y5J-3Z-RI4" id="dLR-WY-wkM"/>
+                <outlet property="MASTER" destination="f9K-ka-yeh" id="mWL-SN-KZP"/>
+                <outlet property="MAXDRAFT_time" destination="wRl-ar-yuK" id="GgK-Fj-byZ"/>
+                <outlet property="MMSI" destination="PjS-fZ-Nuz" id="Ugh-Gn-Ffm"/>
+                <outlet property="NT_Time" destination="hgK-my-irF" id="LOL-RV-UeV"/>
+                <outlet property="SOURCE" destination="22u-e0-rqV" id="MOl-vw-epP"/>
+                <outlet property="STARTDATE" destination="Si8-fe-db4" id="zHv-Fk-Ewh"/>
+                <outlet property="TRIPID" destination="0Rl-7Q-XKz" id="5ON-W0-7iV"/>
+                <outlet property="VESSEL" destination="LZU-C4-alN" id="3f3-zC-Qcx"/>
                 <outlet property="firstButton" destination="QkY-Jj-02B" id="gko-9w-PKR"/>
                 <outlet property="fourthButton" destination="94H-sd-gtj" id="zJq-jI-KHn"/>
                 <outlet property="scrollView" destination="UKJ-ua-Dzx" id="cH7-Vf-cuG"/>
@@ -28,25 +47,25 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-7Q-XKz">
-                            <rect key="frame" x="8" y="8" width="61" height="21"/>
+                            <rect key="frame" x="8" y="8" width="327" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22u-e0-rqV">
-                            <rect key="frame" x="10" y="40" width="65" height="23"/>
+                            <rect key="frame" x="10" y="40" width="325" height="23"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="65" id="tYS-6e-5iK"/>
+                                <constraint firstAttribute="width" constant="325" id="tYS-6e-5iK"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihS-wv-eTG">
-                            <rect key="frame" x="10" y="75" width="48" height="18"/>
+                            <rect key="frame" x="10" y="71" width="325" height="23"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="18" id="Zxc-8P-a0s"/>
-                                <constraint firstAttribute="width" constant="48" id="tng-Nk-Kfd"/>
+                                <constraint firstAttribute="height" constant="23" id="Zxc-8P-a0s"/>
+                                <constraint firstAttribute="width" constant="325" id="tng-Nk-Kfd"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,8 +77,9 @@
                         <constraint firstItem="0Rl-7Q-XKz" firstAttribute="top" secondItem="GsE-wI-JwX" secondAttribute="top" constant="8" id="Du4-2q-IQ9"/>
                         <constraint firstAttribute="height" constant="96" id="Olm-Fc-ulL"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="U6P-xm-J81"/>
+                        <constraint firstAttribute="trailing" secondItem="0Rl-7Q-XKz" secondAttribute="trailing" constant="40" id="XI9-06-eiy"/>
                         <constraint firstItem="22u-e0-rqV" firstAttribute="top" secondItem="0Rl-7Q-XKz" secondAttribute="bottom" constant="11" id="e3W-Ih-BTz"/>
-                        <constraint firstItem="ihS-wv-eTG" firstAttribute="top" secondItem="22u-e0-rqV" secondAttribute="bottom" constant="12" id="eqa-ez-t7p"/>
+                        <constraint firstItem="ihS-wv-eTG" firstAttribute="top" secondItem="22u-e0-rqV" secondAttribute="bottom" constant="8" id="eqa-ez-t7p"/>
                         <constraint firstItem="0Rl-7Q-XKz" firstAttribute="leading" secondItem="GsE-wI-JwX" secondAttribute="leading" constant="8" id="hk1-wC-XTF"/>
                         <constraint firstItem="ihS-wv-eTG" firstAttribute="leading" secondItem="GsE-wI-JwX" secondAttribute="leading" constant="10" id="jGi-RD-Yjx"/>
                         <constraint firstItem="22u-e0-rqV" firstAttribute="leading" secondItem="GsE-wI-JwX" secondAttribute="leading" constant="10" id="wQj-NY-9Z3"/>

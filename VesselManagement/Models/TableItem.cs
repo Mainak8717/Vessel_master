@@ -7,8 +7,6 @@ namespace VesselManagement
 	{
 		public string Title { get; set; }
 
-		public string ImageName { get; set; }
-
 		public UITableViewCellStyle CellStyle
 		{
 			get { return cellStyle; }
