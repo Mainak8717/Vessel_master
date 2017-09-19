@@ -90,24 +90,28 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Menu\" />
+    <Folder Include="ViewController\" />
+    <Folder Include="TableViewCell\" />
+    <Folder Include="TableSource\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="LoginVC.xib" />
-    <InterfaceDefinition Include="HomeViewController.xib" />
     <InterfaceDefinition Include="Menu\MenuCell.xib" />
     <InterfaceDefinition Include="Menu\SideBarMenuController.xib" />
-    <InterfaceDefinition Include="TripCell.xib" />
     <InterfaceDefinition Include="CreateTripVC.xib" />
-    <InterfaceDefinition Include="StartTripVC.xib" />
-    <InterfaceDefinition Include="SearchVC.xib" />
-    <InterfaceDefinition Include="TripDetailsVC.xib" />
-    <InterfaceDefinition Include="ManageVC.xib" />
-    <InterfaceDefinition Include="ManageCell.xib" />
-    <InterfaceDefinition Include="BottomTableViewCell.xib" />
-    <InterfaceDefinition Include="ManageVC_1.xib" />
-    <InterfaceDefinition Include="ManageVC_2.xib" />
-    <InterfaceDefinition Include="ManageVC_3.xib" />
+    <InterfaceDefinition Include="ViewController\HomeViewController.xib" />
+    <InterfaceDefinition Include="ViewController\LoginVC.xib" />
+    <InterfaceDefinition Include="ViewController\ManageVC.xib" />
+    <InterfaceDefinition Include="ViewController\ManageVC_1.xib" />
+    <InterfaceDefinition Include="ViewController\ManageVC_2.xib" />
+    <InterfaceDefinition Include="ViewController\ManageVC_3.xib" />
+    <InterfaceDefinition Include="ViewController\SearchVC.xib" />
+    <InterfaceDefinition Include="ViewController\StartTripVC.xib" />
+    <InterfaceDefinition Include="ViewController\TripDetailsVC.xib" />
+    <InterfaceDefinition Include="TableViewCell\BottomTableViewCell.xib" />
+    <InterfaceDefinition Include="TableViewCell\ManageCell.xib" />
+    <InterfaceDefinition Include="TableViewCell\TripCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -116,15 +120,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="LoginVC.cs" />
-    <Compile Include="LoginVC.designer.cs">
-      <DependentUpon>LoginVC.cs</DependentUpon>
-    </Compile>
     <Compile Include="ConstantsClass.cs" />
-    <Compile Include="HomeViewController.cs" />
-    <Compile Include="HomeViewController.designer.cs">
-      <DependentUpon>HomeViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu\BaseNavigationController.cs" />
     <Compile Include="Menu\BaseVC.cs" />
     <Compile Include="Menu\DependencyProvider.cs" />
@@ -135,55 +131,63 @@
     <Compile Include="Menu\SideBarControllerBase.cs" />
     <Compile Include="Menu\SideBarMenuController.cs" />
     <Compile Include="Menu\SideBarMenuController.designer.cs" />
-    <Compile Include="TripCell.cs" />
-    <Compile Include="TripCell.designer.cs">
-      <DependentUpon>TripCell.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TripsTableSource.cs" />
     <Compile Include="CreateTripVC.cs" />
     <Compile Include="CreateTripVC.designer.cs">
       <DependentUpon>CreateTripVC.cs</DependentUpon>
     </Compile>
-    <Compile Include="StartTripVC.cs" />
-    <Compile Include="StartTripVC.designer.cs">
-      <DependentUpon>StartTripVC.cs</DependentUpon>
+    <Compile Include="ViewController\HomeViewController.cs" />
+    <Compile Include="ViewController\HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchVC.cs" />
-    <Compile Include="SearchVC.designer.cs">
-      <DependentUpon>SearchVC.cs</DependentUpon>
+    <Compile Include="ViewController\LoginVC.cs" />
+    <Compile Include="ViewController\LoginVC.designer.cs">
+      <DependentUpon>LoginVC.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchTableSource.cs" />
-    <Compile Include="TableItem.cs" />
-    <Compile Include="TripDetailsVC.cs" />
-    <Compile Include="TripDetailsVC.designer.cs">
-      <DependentUpon>TripDetailsVC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManageVC.cs" />
-    <Compile Include="ManageVC.designer.cs">
+    <Compile Include="ViewController\ManageVC.cs" />
+    <Compile Include="ViewController\ManageVC.designer.cs">
       <DependentUpon>ManageVC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageCell.cs" />
-    <Compile Include="ManageCell.designer.cs">
-      <DependentUpon>ManageCell.cs</DependentUpon>
-    </Compile>
-    <Compile Include="manageListTableSource.cs" />
-    <Compile Include="BottomTableViewCell.cs" />
-    <Compile Include="BottomTableViewCell.designer.cs">
-      <DependentUpon>BottomTableViewCell.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BottomTableViewSource.cs" />
-    <Compile Include="ManageVC_1.cs" />
-    <Compile Include="ManageVC_1.designer.cs">
+    <Compile Include="ViewController\ManageVC_1.cs" />
+    <Compile Include="ViewController\ManageVC_1.designer.cs">
       <DependentUpon>ManageVC_1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageVC_2.cs" />
-    <Compile Include="ManageVC_2.designer.cs">
+    <Compile Include="ViewController\ManageVC_2.cs" />
+    <Compile Include="ViewController\ManageVC_2.designer.cs">
       <DependentUpon>ManageVC_2.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageVC_3.cs" />
-    <Compile Include="ManageVC_3.designer.cs">
+    <Compile Include="ViewController\ManageVC_3.cs" />
+    <Compile Include="ViewController\ManageVC_3.designer.cs">
       <DependentUpon>ManageVC_3.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewController\SearchVC.cs" />
+    <Compile Include="ViewController\SearchVC.designer.cs">
+      <DependentUpon>SearchVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\StartTripVC.cs" />
+    <Compile Include="ViewController\StartTripVC.designer.cs">
+      <DependentUpon>StartTripVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\TripDetailsVC.cs" />
+    <Compile Include="ViewController\TripDetailsVC.designer.cs">
+      <DependentUpon>TripDetailsVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViewCell\BottomTableViewCell.cs" />
+    <Compile Include="TableViewCell\BottomTableViewCell.designer.cs">
+      <DependentUpon>BottomTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViewCell\ManageCell.cs" />
+    <Compile Include="TableViewCell\ManageCell.designer.cs">
+      <DependentUpon>ManageCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViewCell\TripCell.cs" />
+    <Compile Include="TableViewCell\TripCell.designer.cs">
+      <DependentUpon>TripCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableSource\BottomTableViewSource.cs" />
+    <Compile Include="TableSource\manageListTableSource.cs" />
+    <Compile Include="TableSource\SearchTableSource.cs" />
+    <Compile Include="TableSource\TripsTableSource.cs" />
+    <Compile Include="Models\TableItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\menu.png" />
