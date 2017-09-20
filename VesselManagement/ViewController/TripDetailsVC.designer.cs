@@ -86,44 +86,24 @@ namespace VesselManagement
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (firstButton != null) {
-				firstButton.Dispose ();
-				firstButton = null;
+			if (AFT_Time != null) {
+				AFT_Time.Dispose ();
+				AFT_Time = null;
 			}
 
-			if (fourthButton != null) {
-				fourthButton.Dispose ();
-				fourthButton = null;
+			if (BREADTH_Time != null) {
+				BREADTH_Time.Dispose ();
+				BREADTH_Time = null;
 			}
 
-			if (scrollView != null) {
-				scrollView.Dispose ();
-				scrollView = null;
+			if (CURRENTSTATUS != null) {
+				CURRENTSTATUS.Dispose ();
+				CURRENTSTATUS = null;
 			}
 
-			if (secondButton != null) {
-				secondButton.Dispose ();
-				secondButton = null;
-			}
-
-			if (thirdButton != null) {
-				thirdButton.Dispose ();
-				thirdButton = null;
-			}
-
-			if (IMO != null) {
-				IMO.Dispose ();
-				IMO = null;
-			}
-
-			if (MMSI != null) {
-				MMSI.Dispose ();
-				MMSI = null;
-			}
-
-			if (STARTDATE != null) {
-				STARTDATE.Dispose ();
-				STARTDATE = null;
+			if (DESTINATION != null) {
+				DESTINATION.Dispose ();
+				DESTINATION = null;
 			}
 
 			if (ENDDATE != null) {
@@ -136,44 +116,14 @@ namespace VesselManagement
 				ETACALC = null;
 			}
 
-			if (MASTER != null) {
-				MASTER.Dispose ();
-				MASTER = null;
+			if (firstButton != null) {
+				firstButton.Dispose ();
+				firstButton = null;
 			}
 
-			if (CURRENTSTATUS != null) {
-				CURRENTSTATUS.Dispose ();
-				CURRENTSTATUS = null;
-			}
-
-			if (VESSEL != null) {
-				VESSEL.Dispose ();
-				VESSEL = null;
-			}
-
-			if (NT_Time != null) {
-				NT_Time.Dispose ();
-				NT_Time = null;
-			}
-
-			if (GT_Time != null) {
-				GT_Time.Dispose ();
-				GT_Time = null;
-			}
-
-			if (LOA_Time != null) {
-				LOA_Time.Dispose ();
-				LOA_Time = null;
-			}
-
-			if (LBP_Time != null) {
-				LBP_Time.Dispose ();
-				LBP_Time = null;
-			}
-
-			if (BREADTH_Time != null) {
-				BREADTH_Time.Dispose ();
-				BREADTH_Time = null;
+			if (fourthButton != null) {
+				fourthButton.Dispose ();
+				fourthButton = null;
 			}
 
 			if (FWD_Time != null) {
@@ -181,9 +131,29 @@ namespace VesselManagement
 				FWD_Time = null;
 			}
 
-			if (AFT_Time != null) {
-				AFT_Time.Dispose ();
-				AFT_Time = null;
+			if (GT_Time != null) {
+				GT_Time.Dispose ();
+				GT_Time = null;
+			}
+
+			if (IMO != null) {
+				IMO.Dispose ();
+				IMO = null;
+			}
+
+			if (LBP_Time != null) {
+				LBP_Time.Dispose ();
+				LBP_Time = null;
+			}
+
+			if (LOA_Time != null) {
+				LOA_Time.Dispose ();
+				LOA_Time = null;
+			}
+
+			if (MASTER != null) {
+				MASTER.Dispose ();
+				MASTER = null;
 			}
 
 			if (MAXDRAFT_time != null) {
@@ -191,9 +161,24 @@ namespace VesselManagement
 				MAXDRAFT_time = null;
 			}
 
-			if (TRIPID != null) {
-				TRIPID.Dispose ();
-				TRIPID = null;
+			if (MMSI != null) {
+				MMSI.Dispose ();
+				MMSI = null;
+			}
+
+			if (NT_Time != null) {
+				NT_Time.Dispose ();
+				NT_Time = null;
+			}
+
+			if (scrollView != null) {
+				scrollView.Dispose ();
+				scrollView = null;
+			}
+
+			if (secondButton != null) {
+				secondButton.Dispose ();
+				secondButton = null;
 			}
 
 			if (SOURCE != null) {
@@ -201,9 +186,24 @@ namespace VesselManagement
 				SOURCE = null;
 			}
 
-			if (DESTINATION != null) {
-				DESTINATION.Dispose ();
-				DESTINATION = null;
+			if (STARTDATE != null) {
+				STARTDATE.Dispose ();
+				STARTDATE = null;
+			}
+
+			if (thirdButton != null) {
+				thirdButton.Dispose ();
+				thirdButton = null;
+			}
+
+			if (TRIPID != null) {
+				TRIPID.Dispose ();
+				TRIPID = null;
+			}
+
+			if (VESSEL != null) {
+				VESSEL.Dispose ();
+				VESSEL = null;
 			}
 		}
 	}

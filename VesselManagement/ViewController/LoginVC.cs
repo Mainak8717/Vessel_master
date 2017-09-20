@@ -19,7 +19,7 @@ namespace VesselManagement
 			this.NavigationController.NavigationBar.Hidden = true;
 			this.submitBtn.TouchUpInside += (sender, e) =>
 			{
-
+				AppDelegate.typeOfUser = usernameTxtField.Text;
 				BaseNavigationController nav =
 					new BaseNavigationController(new HomeViewController(false,true));
 

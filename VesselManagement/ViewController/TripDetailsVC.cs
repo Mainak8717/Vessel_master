@@ -18,24 +18,6 @@ namespace VesselManagement
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-
-			firstButton.Hidden = false;
-			secondButton.Hidden = false;
-			thirdButton.Hidden = false;
-			fourthButton.Hidden = false;
-
-			firstButton.TouchUpInside += (sender, e) => { 
-                this.NavigationController.PushViewController(new ManageVC_1("Agency"),true);
-			};
-			thirdButton.TouchUpInside += (sender, e) => { 
-				this.NavigationController.PushViewController(new ManageVC_1("BoatAgent"),true);
-			};
-			secondButton.TouchUpInside += (sender, e) => { 
-				this.NavigationController.PushViewController(new ManageVC_2(),true);
-			};
-			fourthButton.TouchUpInside += (sender, e) => { 
-				this.NavigationController.PushViewController(new ManageVC(),true);
-			};
 			setDetailValues(getTripDetails());
 		}
 		public TripDetails getTripDetails()
@@ -71,12 +53,80 @@ namespace VesselManagement
 		public override void ViewDidLayoutSubviews()
 		{
 			scrollView.ContentSize = new CoreGraphics.CGSize(View.Frame.Width, firstButton.Frame.Y + firstButton.Frame.Size.Height + 200);
+						switch (AppDelegate.typeOfUser)
+			{
+				case "Manager":
+					{ 
+						firstButton.Hidden = false;
+						firstButton.SetTitle("Manage Vendors", UIControlState.Normal);
+						secondButton.Hidden = false;
+						secondButton.SetTitle("Enter PSA DATA", UIControlState.Normal);
+						thirdButton.Hidden = false;
+						thirdButton.SetTitle("Manage Boat Agents", UIControlState.Normal);
+						fourthButton.Hidden = false;
+						fourthButton.SetTitle("Manage Boats", UIControlState.Normal);
+						fourthButton.TouchUpInside += (sender, e) => { 
+                             this.NavigationController.PushViewController(new ManageVC_1("Agency"),true);
+						};
+						secondButton.TouchUpInside += (sender, e) => { 
+							this.NavigationController.PushViewController(new ManageVC_2(),true);
+						};
+						thirdButton.TouchUpInside += (sender, e) => { 
+							this.NavigationController.PushViewController(new ManageVC_1("BoatAgent"),true);
+						};
+						firstButton.TouchUpInside += (sender, e) => { 
+							this.NavigationController.PushViewController(new ManageVC(),true);
+						};
+					}
+					break;
+				case "Agency":
+					{
+						firstButton.Hidden = false;
+						firstButton.SetTitle("Manage Agencies", UIControlState.Normal);
+						secondButton.Hidden = false;
+						secondButton.SetTitle("Manage Vendors", UIControlState.Normal);
+						thirdButton.Hidden = false;
+						thirdButton.SetTitle("Manage Boat Agents", UIControlState.Normal);
+						fourthButton.Hidden = false;
+						fourthButton.SetTitle("Manage Boats", UIControlState.Normal);
 
-		}
-		public override void DidReceiveMemoryWarning()
-		{
-			base.DidReceiveMemoryWarning();
-			// Release any cached data, images, etc that aren't in use.
+						firstButton.TouchUpInside += (sender, e) => { 
+                             this.NavigationController.PushViewController(new ManageVC_1("Agency"),true);
+						};
+						secondButton.TouchUpInside += (sender, e) => { 
+							this.NavigationController.PushViewController(new ManageVC_2(),true);
+						};
+						thirdButton.TouchUpInside += (sender, e) => { 
+							this.NavigationController.PushViewController(new ManageVC_1("BoatAgent"),true);
+						};
+						fourthButton.TouchUpInside += (sender, e) => { 
+							this.NavigationController.PushViewController(new ManageVC(),true);
+						};
+					}
+					break;
+				case "Charterer":
+					{ 
+						firstButton.Hidden = false;
+						firstButton.SetTitle("Manage Agencies", UIControlState.Normal);
+						secondButton.Hidden = true;
+						thirdButton.Hidden = true;
+						fourthButton.Hidden = true;
+
+						firstButton.TouchUpInside += (sender, e) => { 
+                             this.NavigationController.PushViewController(new ManageVC_1("Agency"),true);
+						};
+					}
+					break;
+				case "Vendor":
+					{ 
+						firstButton.Hidden = false;
+						firstButton.TitleLabel.Text = "Manage Agencies";
+						secondButton.Hidden = true;
+						thirdButton.Hidden = true;
+						fourthButton.Hidden = true;
+					}
+					break;
+			}
 		}
 	}
 }

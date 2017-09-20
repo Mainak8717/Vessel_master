@@ -9,6 +9,7 @@ namespace VesselManagement
 	public class AppDelegate : UIApplicationDelegate
 	{
 		public UINavigationController MainNavController { get; set; } = null;
+		public static string typeOfUser { get; set; }
 
 		public static string userName
 		{
