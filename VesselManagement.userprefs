@@ -1,10 +1,7 @@
 ﻿<Properties StartupConfiguration="{5784BFF7-4A43-428D-BB5E-60C479F1B2A1}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workbench ActiveDocument="Vessel_master Status">
     <Files>
-      <File FileName="VesselManagement/ViewController/LoginVC.cs" Line="22" Column="52" />
-      <File FileName="VesselManagement/AppDelegate.cs" Line="12" Column="16" />
-      <File FileName="VesselManagement/ViewController/TripDetailsVC.cs" Line="113" Column="1" />
-      <File FileName="VesselManagement/Main.cs" Line="12" Column="1" />
+      <File FileName="VesselManagement/ViewController/TripDetailsVC.cs" Line="27" Column="1" />
       <File FileName="Vessel_master Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
